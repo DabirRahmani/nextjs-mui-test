@@ -1,6 +1,7 @@
 "use client";
 import { Card, Grid, Typography, useMediaQuery, useTheme } from "@mui/material";
 import * as ItemData from "../../../item-data.json";
+import Image from "next/image";
 
 const ItemDataArray = Object.values(ItemData);
 
@@ -27,6 +28,7 @@ export default function ItemPage({ params: { id } }: any) {
           <Grid item xs={12} sm={4}>
             <img
               width="100%"
+              alt="item"
               src={src}
               loading="lazy"
               style={{
